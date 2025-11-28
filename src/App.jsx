@@ -1,14 +1,18 @@
-// src/App.jsx
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ShoppingListsOverview from "./pages/ShoppingListsOverview";
 import ShoppingListDetailPage from "./pages/ShoppingListDetailPage";
-import "./styles.css";
 
-function App() {
+export default function App() {
     return (
-        <div className="App">
-            <ShoppingListDetailPage />
-        </div>
+        <Router>
+            <Routes>
+                {/* Overview page — shows all lists */}
+                <Route path="/" element={<ShoppingListsOverview />} />
+
+                {/* Detail page — opens individual list by ID */}
+                <Route path="/list/:id" element={<ShoppingListDetailPage />} />
+            </Routes>
+        </Router>
     );
 }
-
-export default App;

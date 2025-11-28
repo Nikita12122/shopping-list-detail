@@ -45,3 +45,20 @@ body { margin: 0; font-family: system-ui, Arial; background: var(--bg); color: v
 .list { list-style: none; padding: 0; margin: 8px 0 0; }
 .list-row { display: flex; align-items: center; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border); }
 .strike { text-decoration: line-through; color: var(--muted); }
+button {
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+button {
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+button:hover {
+    transform: translateY(-2px) scale(1.03);
+    filter: brightness(1.15);
+}
+
+button:active {
+    transform: scale(0.97);
+    filter: brightness(0.9);
+}

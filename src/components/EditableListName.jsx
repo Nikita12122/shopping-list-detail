@@ -32,7 +32,7 @@ export default function EditableListName({ name, isOwner, onRename }) {
             ) : (
                 <>
                     <h2 className="title">{name}</h2>
-                    <button className="btn ghost" onClick={() => setEditing(true)}>✏️ Edit</button>
+                    <button className="btn ghost" onClick={() => setEditing(true)}> Edit</button>
                 </>
             )}
         </div>
